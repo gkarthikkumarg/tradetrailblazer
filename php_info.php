@@ -2,5 +2,6 @@
 
 echo "mainserver";
 phpinfo();
+dvf
 
 ?>
