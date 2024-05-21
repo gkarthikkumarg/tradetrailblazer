@@ -1,0 +1,77 @@
+[debug] [2024-05-21T14:21:39.342Z] ----------------------------------------------------------------------
+[debug] [2024-05-21T14:21:39.346Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KarthikKumar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-21T14:21:39.347Z] CLI Version:   13.9.0
+[debug] [2024-05-21T14:21:39.348Z] Platform:      win32
+[debug] [2024-05-21T14:21:39.348Z] Node Version:  v20.13.1
+[debug] [2024-05-21T14:21:39.348Z] Time:          Tue May 21 2024 19:51:39 GMT+0530 (India Standard Time)
+[debug] [2024-05-21T14:21:39.349Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-21T14:21:39.366Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-21T14:21:39.367Z] > authorizing via signed-in user (gkarthikkumar@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\KarthikKumar\GitHub\tradetrailblazer
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-21T14:21:48.317Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-05-21T14:21:49.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-05-21T14:21:49.161Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project tradetrailblazer-eab84 (Tradetrailblazer) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-05-21T14:21:51.913Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-05-21T14:21:51.913Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/tradetrailblazer-eab84
+[debug] [2024-05-21T14:21:53.513Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firebasedatabase.googleapis.com 200
+[debug] [2024-05-21T14:21:53.513Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-05-21T14:21:53.515Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/tradetrailblazer-eab84/locations/-/instances/tradetrailblazer-eab84-default-rtdb [none]
+[debug] [2024-05-21T14:21:55.225Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/tradetrailblazer-eab84/locations/-/instances/tradetrailblazer-eab84-default-rtdb 200
+[debug] [2024-05-21T14:21:55.225Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/tradetrailblazer-eab84/locations/-/instances/tradetrailblazer-eab84-default-rtdb {"name":"projects/901286109704/locations/us-central1/instances/tradetrailblazer-eab84-default-rtdb","project":"projects/901286109704","databaseUrl":"https://tradetrailblazer-eab84-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-05-21T14:22:17.273Z] >>> [apiv2][query] GET https://tradetrailblazer-eab84-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-05-21T14:22:17.875Z] <<< [apiv2][status] GET https://tradetrailblazer-eab84-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-05-21T14:22:17.876Z] <<< [apiv2][body] GET https://tradetrailblazer-eab84-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for tradetrailblazer-eab84-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-05-21T14:22:17.880Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firestore.googleapis.com [none]
+[debug] [2024-05-21T14:22:17.880Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firestore.googleapis.com x-goog-quota-user=projects/tradetrailblazer-eab84
+[debug] [2024-05-21T14:22:19.484Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firestore.googleapis.com 200
+[debug] [2024-05-21T14:22:19.484Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/tradetrailblazer-eab84/services/firestore.googleapis.com [omitted]
+[debug] [2024-05-21T14:22:19.485Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/tradetrailblazer-eab84/databases/(default) [none]
+[debug] [2024-05-21T14:22:21.048Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/tradetrailblazer-eab84/databases/(default) 200
+[debug] [2024-05-21T14:22:21.049Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/tradetrailblazer-eab84/databases/(default) {"name":"projects/tradetrailblazer-eab84/databases/(default)","uid":"3acedeed-8dd4-4510-b74f-e7a24c0d2d74","createTime":"2024-05-21T13:21:34.318758Z","updateTime":"2024-05-21T13:21:34.318758Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-05-21T13:22:21.752037Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IODxtd74noYDMLry3IjtnoYD"}
+[debug] [2024-05-21T14:22:21.049Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-05-21T14:22:21.049Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-21T14:22:21.049Z] > authorizing via signed-in user (gkarthikkumar@gmail.com)
+[debug] [2024-05-21T14:22:21.050Z] [iam] checking project tradetrailblazer-eab84 for permissions ["firebase.projects.get"]
+[debug] [2024-05-21T14:22:21.050Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradetrailblazer-eab84:testIamPermissions [none]
+[debug] [2024-05-21T14:22:21.051Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradetrailblazer-eab84:testIamPermissions x-goog-quota-user=projects/tradetrailblazer-eab84
+[debug] [2024-05-21T14:22:21.051Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradetrailblazer-eab84:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-21T14:22:21.384Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradetrailblazer-eab84:testIamPermissions 200
+[debug] [2024-05-21T14:22:21.384Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tradetrailblazer-eab84:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
