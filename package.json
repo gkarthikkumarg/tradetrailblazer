@@ -5,7 +5,7 @@
 	"scripts": {
 		"install": "npm install next",
 		"dev": "next dev",
-		"build": "next run build",
+		"build": "npm i && next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
